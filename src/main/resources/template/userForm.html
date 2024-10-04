@@ -1,0 +1,9 @@
+
+<html xmlns:th = "https://www.thymeleaf.org/">
+
+
+<form action="#" th:action="@{/submitForm}" th:object="${user}" method="post">
+    <input type="text" th:field="*{name}" placeholder="Enter your name">
+    <button type="submit">Submit</button>
+</form>
+</html>

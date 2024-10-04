@@ -1,0 +1,5 @@
+<form action="#" th:action="@{/submitEmployeeForm}" th:object="${employee}" method="post">
+    <input type="text" th:field="*{name}" placeholder="Employee Name">
+    <input type="number" th:field="*{id}" placeholder="Employee ID">
+    <button type="submit">Submit</button>
+</form>
